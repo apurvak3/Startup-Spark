@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<h1>Economic Help</h1>
+
+<% economicHelp.forEach(help => { %>
+  <div>
+    
+    <h2><%= help.title %></h2>
+    <p><%= help.description %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>

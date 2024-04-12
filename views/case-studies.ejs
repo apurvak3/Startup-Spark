@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<h1>Case Studies</h1>
+
+<% caseStudies.forEach(caseStudy => { %>
+  <div>
+    <h2><%= caseStudy.title %></h2>
+    <p><%= caseStudy.description %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>

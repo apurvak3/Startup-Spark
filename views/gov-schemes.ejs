@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<h1>Government Schemes</h1>
+
+<% govSchemes.forEach(scheme => { %>
+  <div>
+    <h2><%= scheme.name %></h2>
+    <p><%= scheme.description %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>

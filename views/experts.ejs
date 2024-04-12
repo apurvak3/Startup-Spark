@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<h1>Expert Advice</h1>
+
+<% expertAdvice.forEach(expert => { %>
+  <div>
+    <h2><%= expert.name %></h2>
+    <p><%= expert.advice %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>
